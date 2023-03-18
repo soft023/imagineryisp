@@ -1,0 +1,9 @@
+/* All variables to be declared in the root (--varuable name)*/
+/* The color palet is the first i.e  declare all the colors in the project ...*/
+:root {
+  --color-primary: #2584ff;
+  --color-secondary: #00d9ff;
+  --color-accent: #ff3400;
+  --color-heading: #1b0760;
+  --color-body: #918ca4;
+}
