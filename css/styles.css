@@ -1,6 +1,11 @@
 /* All variables to be declared in the root (--varuable name)*/
 /* The color palet is the first i.e  declare all the colors in the project ...*/
 /* using 62.5% make 10px equal 1rem */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 html {
   font-size: 62.5%;
 }
@@ -157,4 +162,103 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* BUTTON */
+
+.btn {
+  text-transform: uppercase;
+  border-radius: 4rem;
+  font-size: 1.8rem;
+  margin: 1rem 0;
+  font-weight: 600;
+  padding: 2rem 3rem;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.btn--secondary {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+.btn--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.btn--accent {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+.btn--outline {
+  background: #fff;
+  color: var(--color-heading);
+  border: 2px-solid --color-heading;
+}
+
+.btn--accent:hover {
+  background: rgb(234, 4, 4);
+}
+
+.btn--secondary:hover {
+  background: #09d0f4;
+}
+
+.btn--primary:hover {
+  background: #0930f4;
+}
+.btn--outline:hover {
+  background: var(--color-heading);
+  color: #fff;
+}
+.btn--inline {
+  width: 100%;
+  display: inline-block;
+}
+.btn--block {
+  width: 100%;
+  display: block;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
+}
+
+/* input */
+.input {
+  padding: 1.5rem 3.5rem;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  outline: 0;
+  font-size: 2rem;
+}
+::placeholder {
+  color: #cbcdc7;
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 1.5rem;
+  }
+}
+/* SEARCH BOX AND BUTTON */
+
+.input-group {
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  display: flex;
+}
+
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+  padding: 1rem 1.5rem;
+}
+.input-group .btn {
+  margin: 4px;
 }
